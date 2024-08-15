@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="doctor.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="profile">
+            <img src="user.png" alt="Profile Picture">
+            <h2>Test Doctor..</h2>
+            <p>doctor@edoc.com</p>
+        </div>
+        <button class="logout-btn">Log out</button>
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">My Appointments</a></li>
+                <li><a href="#">My Sessions</a></li>
+                <li><a href="#">My Patients</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="main-content">
+        <div class="date">
+            <p>Today's Date</p>
+            <h2>2022-06-03</h2>
+        </div>
+
+        
+        <section class="welcome-section">
+            <div class="welcome-msg">
+                <h1>Welcome!</h1>
+                <h2>Test Doctor.</h2>
+                <p>Thanks for joining with us. We are always trying to get you a complete service.</p>
+                <p>You can view your daily schedule, Reach Patients Appointment at home!</p>
+                <button class="appointment-btn">View My Appointments</button>
+            </div>
+        </section>
+        
+
+        <section class="status">
+            <div class="status-item">
+                <h3>1</h3>
+                <p>All Doctors</p>
+            </div>
+            <div class="status-item">
+                <h3>2</h3>
+                <p>All Patients</p>
+            </div>
+            <div class="status-item">
+                <h3>1</h3>
+                <p>New Booking</p>
+            </div>
+            <div class="status-item">
+                <h3>0</h3>
+                <p>Today Sessions</p>
+            </div>
+        </section>
+
+        <section class="upcoming-sessions">
+            <h2>Your Up Coming Sessions until Next week</h2>
+            <div class="session-table">
+                <p>Session Title</p>
+                <p>Scheduled Date</p>
+                <p>Time</p>
+            </div>
+            <div class="no-sessions">
+                <p>We couldn't find anything related to your upcoming sessions.</p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

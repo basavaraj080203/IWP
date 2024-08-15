@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="user.png" alt="Profile Picture">
+                <h2>Administrator</h2>
+                <p>admin@edoc.com</p>
+                <button class="logout">Log out</button>
+            </div>
+            <nav class="nav-menu">
+                <button class="nav-button active"><span class="nav-icon">🏠</span> Dashboard</button>
+                <button class="nav-button"><span class="nav-icon">👨‍⚕️</span> Doctors</button>
+                <button class="nav-button"><span class="nav-icon">⏰</span> Schedule</button>
+                <button class="nav-button"><span class="nav-icon">📅</span> Appointment</button>
+                <button class="nav-button"><span class="nav-icon">🧑‍🤝‍🧑</span> Patients</button>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <header class="header">
+                <input type="text" placeholder="Search Doctor name or Email">
+                <button class="search-button">Search</button>
+                <div class="date">
+                    <span>Today's Date</span>
+                    <span class="date-box">2022-06-03</span>
+                </div>
+            </header>
+
+            <h1>Status.</h1>
+
+            <section class="status">
+                
+                <div class="status-box">
+                    <span>1</span>
+                    <p>Doctors</p>
+                </div>
+                <div class="status-box">
+                    <span>2</span>
+                    <p>Patients</p>
+                </div>
+                <div class="status-box">
+                    <span>1</span>
+                    <p>NewBooking</p>
+                </div>
+                <div class="status-box">
+                    <span>0</span>
+                    <p>Today Sessions</p>
+                </div>
+            </section>
+
+            <section class="appointments-sessions">
+                <div class="appointments">
+                    <h3>Upcoming Appointments until Next Friday</h3>
+                    <p>Here's Quick access to Upcoming Appointments until 7 days. More details available in @Appointment section.</p>
+                    <div class="appointment-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Appointment number</th>
+                                    <th>Patient name</th>
+                                    <th>Doctor</th>
+                                    <th>Session</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="4" class="no-data">
+                                        <img src="empty-state-placeholder.png" alt="No Data">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="show-all">Show all Appointments</button>
+                    </div>
+                </div>
+                <div class="sessions">
+                    <h3>Upcoming Sessions until Next Friday</h3>
+                    <p>Here's Quick access to Upcoming Sessions that Scheduled until 7 days. Add,Remove and Many features available in @Schedule section.</p>
+                    <div class="session-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Session Title</th>
+                                    <th>Doctor</th>
+                                    <th>Scheduled Date & Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td colspan="3" class="no-data">
+                                        <img src="empty-state-placeholder.png" alt="No Data">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button class="show-all">Show all Sessions</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
